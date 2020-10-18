@@ -1,0 +1,5 @@
+*.agda.el
+*.agdai
+*~
+./_build/*
+html
