@@ -27,10 +27,16 @@ module README where
 -- The structure of the library is the following:
 --
 -- • Base
---     The derivation rules of the implemented type theory and some
---     useful properties which can be derived from these. To make a
---     clear distinction between these every type has a Core and a
---     Properties submodule. In some cases the latter might be empty.
+--    The derivation rules of the implemented type theory and some
+--    useful properties which can be derived from these. To make a
+--    clear distinction between these every type has a Core and a
+--    Properties submodule. In some cases the latter might be empty.
+--
+-- • Data
+--  ◦ Bool
+--     A specialized form of the Coproduct type. It implements if as
+--     an elimination rule. The following operations are defined on
+--     them: not, ∧, ∨, xor.
 ----------------------------------------------------------------------
 
 ----------------------------------------------------------------------
@@ -40,7 +46,7 @@ module README where
 -- • To use several things at once
 import L.Base      -- Type theory with it's properties.
 import L.Base.Core -- Derivation rules.
-
+--
 -- • To use only one base type
 import L.Base.Sigma     -- Products (universe polymorphic).
 import L.Base.Coproduct -- Disjoint sums (universe polymorphic).
@@ -48,4 +54,7 @@ import L.Base.Empty     -- Empty type.
 import L.Base.Unit      -- Unit type.
 import L.Base.Nat       -- Natural numbers.
 import L.Base.Id        -- Propositional equality (universe poly.).
+--
+-- • Some datatypes
+import L.Data.Bool -- Booleans.
 ----------------------------------------------------------------------
