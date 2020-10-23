@@ -58,3 +58,11 @@ import L.Base.Id        -- Propositional equality (universe poly.).
 -- • Some datatypes
 import L.Data.Bool -- Booleans.
 ----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+-- Notes
+----------------------------------------------------------------------
+--
+-- • L.Base exports L.Coproduct.Core._+_ as _⊎_ to avoid multiple
+--   definitions of _+_, as L.Base.Nat declares it as well.
+----------------------------------------------------------------------
