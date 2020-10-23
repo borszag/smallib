@@ -2,12 +2,8 @@ module L.Base.Coproduct.Core where
 
 open import Agda.Primitive
 
-private
-  variable
-    a b : Level
-
 -- Introducing Coproduct types
-data _+_ (A : Set a) (B : Set b) : Set (a ⊔ b) where
+data _+_ {a b} (A : Set a) (B : Set b) : Set (a ⊔ b) where
   inl : A → A + B
   inr : B → A + B
 
