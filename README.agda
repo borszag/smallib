@@ -1,7 +1,7 @@
 module README where
 
 ----------------------------------------------------------------------
--- The Agda smallib library, version 0.0-dev
+-- The Agda smallib library, version 0.1
 ----------------------------------------------------------------------
 --
 -- This library implements a type theory which is described in the
