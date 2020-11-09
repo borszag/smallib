@@ -55,6 +55,14 @@ import L.Base.Unit      -- Unit type.
 import L.Base.Nat       -- Natural numbers.
 import L.Base.Id        -- Propositional equality (universe poly.).
 --
+-- • To use the properties of the above
+import L.Base.Sigma.Properties
+import L.Base.Coproduct.Properties
+import L.Base.Empty.Properties
+import L.Base.Unit.Properties
+import L.Base.Nat.Properties
+import L.Base.Id.Properties
+--
 -- • Some datatypes
 import L.Data.Bool -- Booleans.
 ----------------------------------------------------------------------
